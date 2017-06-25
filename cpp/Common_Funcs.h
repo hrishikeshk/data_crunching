@@ -10,5 +10,9 @@
 
 Bool v_assert(Bool val, const std::string& mesg);
 
+inline double sqr(double x){
+  return x * x;
+}
+
 #endif
 

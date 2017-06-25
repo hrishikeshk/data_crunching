@@ -13,5 +13,8 @@ typedef unsigned int UInt32;
 
 typedef unsigned long long UInt64;
 
+using cluster_id = int;
+using medoid_pos = int;
+
 #endif
 
