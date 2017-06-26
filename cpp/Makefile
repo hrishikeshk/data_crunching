@@ -2,15 +2,12 @@ include OptMake
 
 .PHONY: clean current k_means unit_tests
 
-DIRS=current k_means unit_tests
+DIRS=current unit_tests
 
 all: $(DIRS)
 
 current: Common_Funcs.cpp Common_Funcs.h Consts.h TypeDefs.h
 	$(CC) $(OPTIONS) $(WARN) $(DEBUG) $(INCLUDES) $(FPIC_OBJ) -o cf.o -c Common_Funcs.cpp
-
-k_means: 
-	cd k_means; $(MAKE) k_means
 
 unit_tests: 
 	cd unit_tests; $(MAKE) unit_tests

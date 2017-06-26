@@ -4,7 +4,7 @@ include $(SRC_DIR)/OptMake
 
 TST_INCLUDES=-I $(SRC_DIR)/unit_tests
 
-simple_tests.o: simple_tests.cpp ../Common_Funcs.cpp ../Common_Funcs.h
+simple_tests.o: simple_tests.cpp ../Common_Funcs.cpp ../Common_Funcs.h ../k_means/K_Medoid.h
 	$(CC) $(OPTIONS)  $(WARN) $(DEBUG) $(FPIC_OBJ) $(INCLUDES) $(TST_INCLUDES) -o simple_tests.o -c simple_tests.cpp
 
 unit_tests: simple_tests.o ../cf.o
